@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block script %}
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block content %}
+<div id='root'>
+</div>
+<script type="text/jsx" src="/static/clock.jsx"></script>
+{% endblock %}
