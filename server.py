@@ -5,6 +5,10 @@ app = Flask(__name__)
 app.secret_key = 'yliwmhd'
 app.jinja_env.undefined = StrictUndefined
 
+@app.route("/")
+def homepage():
+    return render_template("homepage.html")
+
 @app.route("/clock")
 def clock():
     return render_template("clock.html")
