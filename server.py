@@ -13,13 +13,21 @@ def homepage():
 def clock():
     return render_template("clock.html")
 
-@app.route("/mailbox")
-def mailbox():
-    return render_template("mailbox.html")
+@app.route("/forms")
+def forms():
+    return render_template("forms.html")
+
+@app.route("/lists")
+def lists():
+    return render_template("lists.html")
 
 @app.route("/login")
 def login():
     return render_template("login.html")
+
+@app.route("/mailbox")
+def mailbox():
+    return render_template("mailbox.html")
 
 @app.route("/warning")
 def warning():
