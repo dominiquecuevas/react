@@ -17,6 +17,10 @@ def clock():
 def forms():
     return render_template("forms.html")
 
+@app.route("/liftingstateup")
+def liftingstateup():
+    return render_template("liftingstateup.html")
+
 @app.route("/lists")
 def lists():
     return render_template("lists.html")
